@@ -1,6 +1,6 @@
 name: loading_progress
-description: A new Flutter project.
-version: 1.0.0
+description: A flutter widget of loading progress Indicator. You can easily customize as you want.
+version: 1.0.1
 homepage: https://github.com/Mto292/loading_progress.git
 
 environment:
