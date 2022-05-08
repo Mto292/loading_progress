@@ -43,6 +43,7 @@ class _MyHomePageState extends State<MyHomePage> {
               onPressed: onTapStartBtn,
               child: const Text('Start Loading Progress'),
             ),
+            const SizedBox(height: 25),
             ElevatedButton(
               onPressed: onTapStartCustomLoadingProgressBtn,
               child: const Text('Start Custom Loading Progress'),
