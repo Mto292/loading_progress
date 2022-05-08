@@ -22,23 +22,26 @@ class LoadingProgress {
       useRootNavigator: useRootNavigator,
       routeSettings: routeSettings,
       builder: (BuildContext context) {
-        return Center(
-          child: widget ??
-              Container(
-                width: MediaQuery.of(context).size.width / 4,
-                padding: EdgeInsets.all(MediaQuery.of(context).size.width / 13),
-                decoration: BoxDecoration(
-                  color: color,
-                  borderRadius: borderRadius ??
-                      const BorderRadius.all(
-                        Radius.circular(12),
-                      ),
+        return WillPopScope(
+          onWillPop: () async => false,
+          child: Center(
+            child: widget ??
+                Container(
+                  width: MediaQuery.of(context).size.width / 4,
+                  padding: EdgeInsets.all(MediaQuery.of(context).size.width / 13),
+                  decoration: BoxDecoration(
+                    color: color,
+                    borderRadius: borderRadius ??
+                        const BorderRadius.all(
+                          Radius.circular(12),
+                        ),
+                  ),
+                  child: AspectRatio(
+                    aspectRatio: 1,
+                    child: gifOrImagePath != null ? Image.asset(gifOrImagePath) : const CircularProgressIndicator(),
+                  ),
                 ),
-                child: AspectRatio(
-                  aspectRatio: 1,
-                  child: gifOrImagePath != null ? Image.asset(gifOrImagePath) : const CircularProgressIndicator(),
-                ),
-              ),
+          ),
         );
       },
     );

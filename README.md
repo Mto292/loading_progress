@@ -14,7 +14,7 @@ add this line to pubspec.yaml
 ```yaml
 
    dependencies:
-     loading_progress: ^1.0.1
+     loading_progress: ^1.0.2
 
 ```
 
