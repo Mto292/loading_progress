@@ -43,6 +43,9 @@ Stop it with
    LoadingProgress.stop(context);
 ```
 
+![gif_1](https://user-images.githubusercontent.com/49743631/167276311-b96b6f22-adda-489b-a2a6-f1c467dccb60.gif)
+
+
 ## Use With Gif
 ```dart
    LoadingProgress.start(context,
@@ -51,6 +54,9 @@ Stop it with
    await Future.delayed(const Duration(seconds: 3));
    LoadingProgress.stop(context);
 ```
+
+![gif_2](https://user-images.githubusercontent.com/49743631/167276327-6b83530c-f361-4850-9162-c46e0d006164.gif)
+
 
 ## Use With Custom Widget
 ```dart
